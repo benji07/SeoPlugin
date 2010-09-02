@@ -1,0 +1,25 @@
+options:
+  collate: utf8_unicode_ci
+  charset: utf8
+  
+Seo:
+  actAs:
+    I18n:
+      fields: [title, keywords, description]
+  columns:
+    id:
+      type: integer(4)
+      primary: true
+      autoincrement: true
+    name: 
+      type: string(50)
+      notnull: true
+      unique: true
+    title:
+      type: string(255)
+    keywords:
+      type: string
+    description:
+      type: string
+    parameters:
+      type: string

@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Seo
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          seo
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Manage SEO
+        display: [id, name, title, parameters]
+        actions: {}
+        batch_actions: {}
+        object_actions: 
+          _edit: ~
+      filter:
+        class: false
+      edit:
+        title: Edit "%%name%%" SEO
+        display:
+          NONE: [_fname, _fparams]
+          En: [_en_seo]
+        actions:
+          _list: ~
+          _save: ~
