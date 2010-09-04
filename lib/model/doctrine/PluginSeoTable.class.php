@@ -22,8 +22,16 @@ class PluginSeoTable extends Doctrine_Table
     if($event['method'] == 'seo')
     {
       $event->setProcessed(true);
-      
-      list($name, $args) = $event['arguments'];
+      $name = '';
+      $args = array();
+      if(count($event['arguments']) == 1)
+      {
+        $name = $event['arguments'][0];  
+      }
+      else
+      {
+        list($name, $args) = $event['arguments'];
+      }
       
       $response = sfContext::getInstance()->getResponse();
       

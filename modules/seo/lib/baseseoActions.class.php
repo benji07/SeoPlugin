@@ -1,6 +1,7 @@
 <?php
 
-require_once dirname(__FILE__).'/../lib/baseseoActions.class.php';
+require_once dirname(__FILE__).'/seoGeneratorConfiguration.class.php';
+require_once dirname(__FILE__).'/seoGeneratorHelper.class.php';
 
 /**
  * seo actions.
@@ -10,6 +11,6 @@ require_once dirname(__FILE__).'/../lib/baseseoActions.class.php';
  * @author     Benjamin Lévêque <benjamin@leveque.me>
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
-class seoActions extends baseseoActions
+class baseseoActions extends autoSeoActions
 {
 }

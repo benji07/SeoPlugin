@@ -2,7 +2,7 @@
   <div>
     <label for="post_title"><?php echo __('Parameters') ?></label>
     <div class="content">
-      <?php echo $form->getObject()->parameters ?>
+      <?php echo $form->getObject()->parameters ?>&nbsp;
     </div>
   </div>
 </div>
