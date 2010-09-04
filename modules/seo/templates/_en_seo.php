@@ -1,1 +1,0 @@
-<?php include_partial('seo', array('label' => 'en', 'form' => $form)) ?>

@@ -27,7 +27,7 @@ generator:
         title: Edit "%%name%%" SEO
         display:
           NONE: [_fname, _fparams]
-          En: [_en_seo]
+          Languages: [_seo]
         actions:
           _list: ~
           _save: ~

@@ -1,0 +1,3 @@
+all:
+  seo:
+    langs: [en, fr]

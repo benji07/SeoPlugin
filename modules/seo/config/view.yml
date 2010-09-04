@@ -1,0 +1,2 @@
+all:
+  stylesheets: [/SeoPlugin/css/admin.css]

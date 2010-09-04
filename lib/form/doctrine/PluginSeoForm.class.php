@@ -17,6 +17,11 @@ abstract class PluginSeoForm extends BaseSeoForm
     
     $this->useFields(array());
     
-    $this->embedI18n(array('en'));
+    $langs = sfConfig::get('app_seo_langs', array());
+    
+    if(count($langs))
+    {
+      $this->embedI18n($langs);
+    }
   }
 }
